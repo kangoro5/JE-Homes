@@ -1,2 +1,2 @@
 # JE-Homes
-A bnb booking platfirm
+A BNB booking platform
