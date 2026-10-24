@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JE Homes | Stay somewhere that feels like yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="JE Homes home"><span class="brand-mark">JE</span><span>homes</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#stays">Find a stay</a>
+      <a href="#story">Our story</a>
+      <a href="/admin">Admin</a>
+    </nav>
+    <a class="host-link" href="#host">List your home <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Boutique bayside stays</p>
+        <h1>Stay somewhere <em>beautifully yours.</em></h1>
+        <p class="hero-text">Wake up to linen-soft rooms, slow breakfasts, and coastal views that feel personal from the moment you arrive.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#stays">Book your stay</a>
+          <a class="secondary-link" href="/admin">Owner dashboard</a>
+        </div>
+        <ul class="hero-metrics" aria-label="Property highlights">
+          <li><strong>32</strong><span>homes</span></li>
+          <li><strong>4.9/5</strong><span>guest rating</span></li>
+          <li><strong>24/7</strong><span>concierge</span></li>
+        </ul>
+      </div>
+
+      <form class="search-panel" id="search-form">
+        <div class="field destination-field">
+          <label for="destination">Where</label>
+          <input id="destination" type="text" placeholder="Search a city or region" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="check-in">Check in</label>
+          <input id="check-in" type="date" required>
+        </div>
+        <div class="field">
+          <label for="check-out">Check out</label>
+          <input id="check-out" type="date" required>
+        </div>
+        <div class="field guests-field">
+          <label for="guests">Guests</label>
+          <select id="guests">
+            <option value="1">1 guest</option>
+            <option value="2" selected>2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6 guests</option>
+          </select>
+        </div>
+        <button class="search-button" type="submit" aria-label="Search stays">⌕</button>
+      </form>
+    </section>
+
+    <section class="stays-section" id="stays">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The JE edit</p>
+          <h2>Available homes.</h2>
+        </div>
+        <p class="section-intro">No endless scrolling. Just homes we would happily stay in ourselves.</p>
+      </div>
+      <div class="filter-row" aria-label="Stay categories">
+        <button class="filter active" data-filter="all">All stays</button>
+        <button class="filter" data-filter="coastal">Coastal</button>
+        <button class="filter" data-filter="city">City breaks</button>
+        <button class="filter" data-filter="countryside">Countryside</button>
+      </div>
+      <div class="stay-grid" id="stay-grid"></div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span>✓</span>
+          <h3>Thoughtful spaces</h3>
+          <p>Each home is chosen for natural light, comfort, and local character.</p>
+        </div>
+        <div class="feature-card">
+          <span>✓</span>
+          <h3>Fast guest support</h3>
+          <p>Our team helps with arrivals, local tips, and any issue during the stay.</p>
+        </div>
+        <div class="feature-card">
+          <span>✓</span>
+          <h3>Flexible stays</h3>
+          <p>From quick weekends to longer slow-living escapes, we keep it easy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image" role="img" aria-label="Quiet pool beside a modern home"></div>
+      <div class="story-copy">
+        <p class="eyebrow">A different kind of getaway</p>
+        <h2>Space to do<br><em>less, better.</em></h2>
+        <p>JE Homes is a small collection of places with good light, real character, and hosts who know the best bakery in town.</p>
+        <a class="text-link" href="#stays">Explore the collection <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Guest love</p>
+          <h2>What our guests say.</h2>
+        </div>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“The room was spotless, the host was warm, and the location felt like a private hideaway.”</p>
+          <strong>— Anika, weekend guest</strong>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“Everything was thoughtfully arranged — the best mix of luxury and comfort we have ever had.”</p>
+          <strong>— Daniel, long-stay guest</strong>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“A beautiful property with great communication and a genuinely memorable stay.”</p>
+          <strong>— Chloe, family guest</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Plan your next escape.</h2>
+        </div>
+        <div class="contact-details">
+          <p>hello@jehomes.co</p>
+          <p>+254 720 335 889</p>
+          <p>Ngong Road, Nairobi</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="booking-dialog" id="booking-dialog">
+    <button class="close-dialog" id="close-dialog" aria-label="Close booking form">×</button>
+    <div id="booking-content">
+      <p class="eyebrow">Make it yours</p>
+      <h2>Book your stay.</h2>
+      <p class="dialog-subtitle" id="selected-stay"></p>
+      <form id="booking-form">
+        <input type="hidden" id="room-id">
+        <div class="form-grid">
+          <label>Full name<input id="guest-name" type="text" required placeholder="Your name"></label>
+          <label>Email<input id="guest-email" type="email" required placeholder="you@example.com"></label>
+          <label>Check in<input id="booking-check-in" type="date" required></label>
+          <label>Check out<input id="booking-check-out" type="date" required></label>
+          <label>Payment method<select id="payment-method" required>
+            <option value="" selected disabled>Choose a method</option>
+            <option value="mpesa">M-Pesa</option>
+            <option value="card">Card</option>
+            <option value="pay_at_property">Pay at property</option>
+          </select></label>
+          <label class="mpesa-phone-field" id="mpesa-phone-field">M-Pesa number<input id="mpesa-phone" type="tel" inputmode="numeric" placeholder="0712 345 678"></label>
+        </div>
+        <label>Note to your host <textarea id="guest-note" rows="3" placeholder="Anything we should know?"></textarea></label>
+        <div class="booking-total"><span>Estimated total</span><strong id="booking-total">KSh 0</strong></div>
+        <button class="primary-button" type="submit">Request to book <span>→</span></button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </div>
+  </dialog>
+
+  <footer id="host"><span>© 2026 JE Homes</span><span>Made for meaningful escapes.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
